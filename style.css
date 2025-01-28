@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+header {
+  width: 800px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#logo {
+  width: 30%;
+}
+
+a {
+  color: rgb(108, 108, 108);
+  transition: color ease-in 0.2s;
+}
+
+a:hover {
+  color: #000;
+}
+
+main {
+  width: 800px;
+  margin: 2rem auto;
+}
+
+#container a {
+  color: white;
+  text-decoration: none;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#container div {
+  background-color: #949494;
+  color: #fff;
+  border-radius: 2px;
+  padding: 2rem 1rem;
+  transition: background-color ease-in 0.2s, color ease-in 0.2s;
+}
+
+#container div:hover {
+  background-color: #ede6e6;
+  color: #000;
+}
+
+.cataheader {
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.box {
+  border-radius: 10px;
+  display: grid;
+  gap: 0.5rem;
+  box-shadow: 0 5px 10px #4b4b4b33;
+  overflow: hidden;
+}
+
+.boxinfo {
+  padding: 0.5rem;
+}
+
+.boxinfo h2 {
+  margin-bottom: 1rem;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+h2 {
+  font-size: 90%;
+  text-decoration: underline;
+}
+p {
+  font-size: 80%;
+}
+
+.box a {
+  font-size: 80%;
+}
