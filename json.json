@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "stock": true,
+    "name": "Big Cat Backpack Black",
+    "productType": "Backpack",
+    "brand": "Puma",
+    "price": 1299,
+    "sale": {
+      "tilbud": true,
+      "amount": 30
+    },
+    "size": ["S", "M", "L", "XL"]
+  },
+  {
+    "id": 2,
+    "stock": true,
+    "name": "Big Cat Backpack Black",
+    "productType": "Backpack",
+    "brand": "Puma",
+    "price": 1299,
+    "sale": {
+      "tilbud": true,
+      "amount": 30
+    },
+    "size": ["S", "M", "L", "XL"]
+  }
+]
