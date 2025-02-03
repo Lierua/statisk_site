@@ -1,6 +1,6 @@
 const productContainer = document.querySelector("#productcontainer");
 
-let productId = 1526;
+let productId = new URLSearchParams(window.location.search).get("id");
 
 fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
   .then((response) => response.json())
