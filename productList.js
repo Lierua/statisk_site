@@ -5,10 +5,12 @@ const mitArray = ["navn-1", "navn-2", "navn-3"];
 const nytArray = mitArray.map((navn) => `<li>${navn}</li>`);
 
 const string = nytArray.join(" ");
-
+//start=640&limit=8
 console.log(string);
 
-fetch(`https://kea-alt-del.dk/t7/api/products?start=640&limit=8`)
+const categori = new URLSearchParams(window.location.search).get("category");
+
+fetch(`https://kea-alt-del.dk/t7/api/products?category=${categori}&limit=8`)
   .then((response) => response.json())
   .then((products) => {
     productContainer.innerHTML = "";
@@ -25,7 +27,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products?start=640&limit=8`)
                  <p class="price">Dkk ${data.price}</p>
                 <p class="sale tilbud disable">-30%</p>
             </div>
-            <a href="">product.html</a>
+            <a href="product.html?id=${data.id}">Read More</a>
         </div>
     </div>`;
     });
