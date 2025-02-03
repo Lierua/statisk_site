@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="content.js" defer></script> -->
+    <script src="productList.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img id="logo" src="img/logo.png" alt="FashionRUs logo">
+        <a href="index.html"><img id="logo" src="img/logo.png" alt="FashionRUs logo"></a>
         <div id="menu">
             <a href="#">Cateories</a>
             <a href="#">Brands</a>
@@ -23,43 +25,76 @@
         </div>
         <div class="container">
             <div class="box">
+                <h1 class="udsolgtskrift disable"> UDSOLGT</h1>
                 <img src="img/1526.webp" alt="product">
                 <div class="flexcol boxinfo">
                     <h2>Big Cat Backpack Black</h2>
                     <p>Tshirts/Nike</p>
-                    <p>Dkk 1299</p>
-                    <a href="#">Read More</a>
+                    <div class="flexrow">
+                        <p class="price">Dkk 1299</p>
+                        <p class="tilbud">-30%</p>
+                    </div>
+                    <a href="product.html">Read More</a>
                 </div>
             </div>
-            <div class="box">
+            <div class="box udsolgt">
+                <h1 class="udsolgtskrift "> UDSOLGT</h1>
                 <img src="img/1528.webp" alt="product">
                 <div class="flexcol boxinfo">
                     <h2>Black Fleece Jacket</h2>
                     <p>Jackets/Puma</p>
-                    <p>Dkk 3999</p>
+                    <div class="flexrow">
+                        <p class="price">Dkk 3999</p>
+                        <p class="tilbud">-30%</p>
+                    </div>
                     <a href="#">Read More</a>
                 </div>
             </div>
             <div class="box">
+                <h1 class="udsolgtskrift disable"> UDSOLGT</h1>
                 <img src="img/1529.webp" alt="product">
                 <div class="flexcol boxinfo">
                     <h2>Tee</h2>
                     <p>Tshirts/Puma</p>
                     <p>Dkk 1899</p>
+                    <div class="flexrow">
+                        <p class="price">Dkk 1899</p>
+                        <p class="tilbud disable">-30%</p>
+                    </div>
                     <a href="#">Read More</a>
                 </div>
             </div>
             <div class="box">
+                <h1 class="udsolgtskrift disable"> UDSOLGT</h1>
                 <img src="img/1532.webp" alt="product">
                 <div class="flexcol boxinfo">
                     <h2>Grey Leaping Cat T-shirt</h2>
                     <p>Tshirts/Puma</p>
                     <p>Dkk 899</p>
+                    <div class="flexrow">
+                        <p class="price">Dkk 899</p>
+                        <p class="tilbud disable">-30%</p>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <h1 class="stock udsolgtskrift disable"> UDSOLGT</h1>
+                <img class="img" src="img/1532.webp" alt="product">
+                <div class="flexcol boxinfo">
+                    <h2 class="name">Grey Leaping Cat T-shirt</h2>
+                    <p class="productType">Tshirts/Puma</p>
+                    <div class="flexrow">
+                        <p class="price">Dkk 899</p>
+                        <p class="sale tilbud disable">-30%</p>
+                    </div>
                     <a href="#">Read More</a>
                 </div>
             </div>
         </div>
     </main>
+
+    <script src="productList.js"></script>
 </body>
 
 </html>
