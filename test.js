@@ -8,8 +8,11 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
 
 function showProduct(data) {
   console.log("data", data);
+
+  let discPrice = (data.price - data.price * (data.discount / 100)).toFixed(2);
   productContainer.innerHTML = `
-    <div>
+   <div class="box  ${data.soldout ? "udsolgt" : ""}">
+    <h1 class="stock udsolgtskrift ${data.soldout ? "" : "disable"}"> UDSOLGT</h1>
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/${data.id}.webp" alt="product image">
             </div>
             <div id="infobox" class="flexcol">
@@ -31,7 +34,11 @@ function showProduct(data) {
                         <h2>Inventory number</h2>
                     </li>
                     <li class="innerlink">
-                        <p>Dkk ${data.price}</p>
+                        <div class="flexrow">
+                 <p class="price ${data.soldout ? "udsolgt" : ""} ${data.discount ? "red" : ""}">Dkk ${data.discount ? discPrice : data.price}</p>
+                                 <p class="${data.soldout ? "udsolgt" : ""} sale tilbud ${data.discount ? "" : "disable"}">-${data.discount}%</p>
+
+            </div>
                     </li>
                 </ul>
                 <h1 class="name">${data.brandname}</h1>
