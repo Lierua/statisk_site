@@ -188,6 +188,11 @@ li {
   border-radius: 8px;
 }
 
+.dropdown-containerv2 {
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
 label {
   font-size: 14px;
   font-weight: bold;
